@@ -1,0 +1,93 @@
+
+.checkout__section, .patnership__Section {
+    background-color: #f4f1eb;
+    background-image: url('./../../assets/imgs/64935d55c6acb4b535de4ca5_grain.webp');
+    background-position: 50%;
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    color: #333;
+    padding: 14rem 0 8rem;
+}
+.checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12rem;
+    color: inherit;
+}
+.checkout--heading {
+    font-size: 3.2rem;
+    margin-bottom: 1.8rem;
+}
+.checkout__form {
+    background-color: #fff;
+    box-shadow: .6rem .6rem 1.6rem rgba(0, 0, 0, .1);
+    padding: 2.8rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.checkout--finish, .checkout--test {
+    margin-top: 2.8rem;
+}
+.form__item {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.form__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.form__select {
+    cursor: pointer;
+}
+.form__select option {
+    border: 1px solid #000;
+
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+}
+.form__input, .form__select {
+    padding: 1.4rem;
+    border: none;
+    border-radius: .6rem;
+    background-color: rgba(238, 238, 238, 0.4);
+}
+.form__input:focus, .form__select:focus {
+    outline: none;
+}
+.form__submit {
+    background-color: #460bf9;
+    padding: 1.4rem 2.8rem;
+    align-self: flex-start;
+    font-weight: 600;
+    color: #fff;
+    border-radius: .4rem;
+}
+.checkout--image {
+    height: 100%;
+}
+.form__question {
+    margin-bottom: .6rem;
+    color: #333;
+}
+.form--margin {
+    margin-bottom: 1.2rem;
+}
+.form__radio {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.4rem;
+}
+.form__radio label {
+    color: #444;
+}
+.form--block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

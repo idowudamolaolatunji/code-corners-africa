@@ -1,0 +1,34 @@
+/* 1150px === 115rem === 71.865em */
+@media screen and (max-width: 71.865em) {
+    .navbar__list {
+        gap: 2.4rem;
+    }
+    .featured__flex {
+        gap: 1.4rem;
+    }
+    .featured__flex img {
+        height: 6rem;
+    }
+    img.prestige {
+        height: 4rem;
+    }
+}
+
+/* 1050px === 105rem === 65.625em */
+@media screen and (max-width: 65.625em) {
+    .nav__item a {
+        font-weight: 500;
+    }
+}
+
+
+/* 650px === 615rem === 40.625em */
+@media screen and (max-width: 40.625em) {
+    html {
+        font-size: 50%;
+    }
+    .navbar {
+        display: none;
+    }
+          
+}

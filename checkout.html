@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- flat icons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css'>
+    
+
+    <!-- css style sheets -->
+    <link rel="stylesheet" href="public/src/css/general.css">
+    <!-- <link rel="stylesheet" href="public/src/css/main.css"> -->
+    <link rel="stylesheet" href="public/src/css/other.css">
+    <link rel="stylesheet" href="public/src/css/query.css">
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script defer src="public/src/js/index.js"></script>
+
+    <title>Code Corners Africa | Ignite Your Tech Passion</title>
+
+</head>
+
+<body>
+    <header class="header" style="backdrop-filter: blur(0); background-color: #fff;">
+        <div class="header__container">
+            <span class="logo__box">
+                <a href="/index.html">
+                    <img class="nav__logo" src="public/assets/imgs/logo.png" alt="logo image"/>
+                </a>
+            </span>
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a style="color: #333;" href="/index.html#about">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a style="color: #333;" href="/index.html#courses">Our Courses</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a style="color: #333;" href="/index.html#tutor">Meet our Tutor</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a style="color: #333;" href="/index.html#testimonals">Testimonials</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a style="color: #333;" href="/index.html#contact">Contact Us</a>
+                    </li>
+                    <li class="navbar__button nav--others">
+                        <a style="color: #fff;" href="#">Apply Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="checkout__section">
+            <div class="section__container">
+                <!-- <div class="checkout checkout--main">
+                    <form class="checkout__form form--main">
+                        <p class="checkout--heading">Begin Your Journey</p>
+                        <div class="form__item">
+                            <label class="form__label" for="name">Full Name</label>
+                            <input required type="text" class="form__input" id="name" placeholder="Enter full name"/>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="email">Email Address</label>
+                            <input required type="email" class="form__input" id="email" placeholder="Enter email address"/>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="phone">Phone Number</label>
+                            <input required type="tel" class="form__input" id="phone" placeholder="Enter phone number"/>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="select">Course</label>
+                            <select class="form__select" id="select">
+                                <option disabled value selected>Select a course</option>
+                                <option value="frontend-html-css-js">Frontend Development (HTML, CSS & JS) | Free </option>
+                                <option value="frontend-react">Frontend Development (React)</option>
+                                <option value="backend">Backend Development</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <button class="form__submit button">Next</button>
+                        </div>
+                    </form>
+
+                    <img class="checkout--image" src="/public/assets/imgs/mentorship.png" alt="checkout image" /> 
+                </div> -->
+
+                <!-- <div class="checkout checkout--test">
+                    <form class="checkout__form form--test">
+                        <p class="checkout--heading">Take Short accessment</p>
+                        <div class="form__item form--margin">
+                            <p class="form__question">1. What is the full meaning of HTML?</p>
+                            <div class="form--block">
+                                <span class="form__radio">
+                                    <input type="radio" />
+                                    <label>Hyper Testing Making Language</label>
+                                </span>
+                                <span class="form__radio">
+                                    <input type="radio" />
+                                    <label>Hypertext Markup Language</label>
+                                </span>
+                                <span class="form__radio">
+                                    <input type="radio" />
+                                    <label>Hypertext Markup Language</label>
+                                </span>
+                            </div>
+                        </div>
+                         <div class="form__item form--margin">
+                            <p class="form__question">2. What is the full meaning of HTML?</p>
+                            <div class="form--flex">
+                                <span class="form__radio">
+                                    <input type="radio" />
+                                    <label>Hyper</label>
+                                </span>
+                                <span class="form__radio">
+                                    <input type="radio" />
+                                    <label>Hypertext</label>
+                                </span>
+                                <span class="form__radio">
+                                    <input type="radio" />
+                                    <label>Markup</label>
+                                </span>
+                                <span class="form__radio">
+                                    <input type="radio" />
+                                    <label>Markup</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <label for="select">3. Experience with js?</label>
+                            <select class="form__select" required id="select">
+                                <option disabled value selected>Select your answer</option>
+                                <option value="frontend-html-css-js">Frontend Development (HTML, CSS & JS) | Free </option>
+                                <option value="frontend-react" disabled>Frontend Development (React)</option>
+                                <option value="backend" disabled>Backend Development</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <button class="form__submit button">FInish</button>
+                        </div>
+                    </form>
+
+                    <img class="checkout--image" src="/public/assets/imgs/assessment.png" alt="checkout image" />
+                </div> -->
+
+
+                    
+                <div class="checkout checkout--finish">
+                    <form class="checkout__form form--finish">
+                        <p class="checkout--heading">Finish Your Application</p>
+                        
+                        <div class="form__item">
+                            <label class="form__label" for="select">State of Residence</label>
+                            <select class="form__select" id="select">
+                                <option disabled value selected>Select a State</option>
+                                <option value="Abuja-FCT">Abuja FCT</option>
+                                <option value="Abia">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="Akwa-Ibom">Akwa Ibom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="Cross River">Cross River</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nassarawa">Nassarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamfara</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="select">How did you hear about Us</label>
+                            <select class="form__select" id="select">
+                                <option disabled value selected>Select an option</option>
+                                <option value="">Linkedin </option>
+                                <option value="">Twitter</option>
+                                <option value="">Whatsapp</option>
+                                <option value="">A friend</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="select">Registration fee</label>
+                            <select class="form__select" id="select">
+                                <option disabled value selected>Select an option</option>
+                                <option value="">Full Payment </option>
+                                <option disabled >Part Payment</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <button class="form__submit button">Submit</button>
+                        </div>
+                    </form>
+
+                    <img class="checkout--image" src="/public/assets/imgs/finish.png" alt="checkout image" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer footer--other">
+        <div class="section__container">
+            <img src="/public/assets/imgs/logo.png" alt="footer logo" />
+            <div class="footer__grid">
+                <div>
+                    <P>Join us Code Corners Africa as we share our dedication to guiding and nurturing a new generation of undiscovered tech talents.</P>
+                    <p class="copyright">&copy;2023 Code Corners Africa. All rights reserved.</p>
+                </div>
+                <ul >
+                    <li class="list--heading">Company</li>
+                    <li><a href="/index.html#about">About Us</a></li>
+                    <li><a href="/index.html#courses">Our Courses</a></li>
+                    <li><a href="/index.html#tutor">Tutor</a></li>
+                    <li><a href="/index.html#contact">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li class="list--heading">Access</li>
+                    <li><a href="/join.html">Join Our Community</a></li>
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="/partner.html">Partnership</a></li>
+                </ul>
+                <ul>
+                    <li class="list--heading">Contact</li>
+                    <li><a href="mailto:codecornerafrica@gmail.com"><i class="fi fi-rr-envelope"></i> codecornerafrica@gmail.com</a></li>
+                    <li><a href="tel:09057643470"><i class="fi fi-rr-phone-flip"></i> 09057643470</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
