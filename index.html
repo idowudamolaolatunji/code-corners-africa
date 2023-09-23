@@ -62,15 +62,43 @@
                     </li>
                 </ul>
             </nav>
+            <label class="menu-label mobile-nav">
+                <input class="menu-input" type="checkbox">
+                <span class="menu">
+                    <span class="hamburger"></span>
+                </span>
+                <ul class="menu-nav">
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#courses">Our Courses</a>
+                    </li>
+                    <li>
+                        <a href="#tutor">Meet our Tutor</a>
+                    </li>
+                    <li>
+                        <a href="#testimonals">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                    <li class="navbar__button nav--main">
+                        <a href="./checkout.html">Apply Now</a>
+                    </li>
+                </ul>
+            </label>
+
+
+            
         </div>
     </header>
     
     <main>
         <!-- hero section -->
         <section class="hero__section">
-            <!-- <img class="background__effects effect--1" src="/public/assets/imgs/3d-construction-abstract-composition-with-colored-objects-9.png" /> -->
-            <!-- <img class="background__effects effect--2" src="/public/assets/imgs/3d-construction-abstract-composition-with-plastic-shapes-1.png" /> -->
-            <div class="section__container">
+            <div class="section__container hero">
+                <img class="hero--effect effect--display-none" src="/public/assets/imgs/hero.png" />
                 <div class="hero__details">
                     <h1 class="heading__primary">
                         <span class="heading__primary--main main--1">Fostering the</span><br />
@@ -89,7 +117,7 @@
 
                     <div class="hero__actions">
                         <button class="hero__button button--filled">Contact Us</button>
-                        <button class="hero__button button--outline">Apply Now&nbsp;<i class="fi fi-rr-arrow-alt-right"></i></button>
+                        <button class="hero__button button--outline">Apply Now&nbsp;<i class="fi fi-rr-arrow-alt-right hero-icon-arrow"></i></button>
                     </div>
                 </div>
             </div>
@@ -103,7 +131,6 @@
                 <div class="about__content">
                     <span class="about__image--box">
                         <img class="about__image" src="/public/assets/imgs/about-img1.jpg" alt="" />
-                        <!-- <img class="about__image" src="/public/assets/imgs/casual-life-3d-man-chatting-on-dating-site.png" alt="" /> -->
                     </span>
                     <div class="about__details">
                         <img class="quotes quote--left" src="public/assets/imgs/download-removebg-preview.png" alt="quotes" />
@@ -125,36 +152,39 @@
                 <p class="section__subHeading">Courses</p>
                 <h3 class="section__heading">Our Valuable Courses</h3>
                 <p class="courses__text">Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat.</p>
-                <div class="courses__card free">
-                    <img class="course--image hcj" src="/public/assets/imgs/frontend.jpg" alt="frontend dev" />
-                    <div class="course--content">
-                        <img src="/public/assets/imgs/logo.png" class="course__logo" alt="" />
-                        <p class="content--heading">Frontend <span class="content--extra">Development.</span></p>
-                        <p class="content--title">Learn Frontend development With HTML, CSS, JS </p>
-                        <p class="content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed..</p>
-                        <button class="button course--button">Apply Now</button>
+                
+                <span class="courses__cards">
+                    <div class="courses__figure free">
+                        <img class="course--image hcj" src="/public/assets/imgs/frontend.jpg" alt="frontend dev" />
+                        <div class="course--content">
+                            <img src="/public/assets/imgs/logo.png" class="course__logo" alt="" />
+                            <p class="content--heading">Frontend <span class="content--extra">Development.</span></p>
+                            <p class="content--title">Learn Frontend development With HTML, CSS, JS </p>
+                            <p class="content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed..</p>
+                            <button class="button course--button">Apply Now</button>
+                        </div>
                     </div>
-                </div>
-                <div class="courses__card not-free price-50">
-                    <img class="course--image" src="/public/assets/imgs/React.jpg" alt="react web dev" />
-                    <div class="course--content">
-                        <img src="/public/assets/imgs/logo.png" class="course__logo" alt="" />
-                        <p class="content--heading">React Frontend <span class="content--extra">Development.</span></p>
-                        <p class="content--title">Frontend development With React.js </p>
-                        <p class="content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed..</p>
-                        <button class="button course--button">Apply Now</button>
+                    <div class="courses__figure not-free price-50">
+                        <img class="course--image" src="/public/assets/imgs/React.jpg" alt="react web dev" />
+                        <div class="course--content">
+                            <img src="/public/assets/imgs/logo.png" class="course__logo" alt="" />
+                            <p class="content--heading">Frontend <span class="content--extra">Development.</span>(React.js)</p>
+                            <p class="content--title">Frontend development With React.js </p>
+                            <p class="content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed..</p>
+                            <button class="button course--button">Apply Now</button>
+                        </div>
                     </div>
-                </div>
-                <div class="courses__card not-free price-100">
-                    <img class="course--image" src="/public/assets/imgs/backend.jpg" alt="" />
-                    <div class="course--content">
-                        <img src="/public/assets/imgs/logo.png" class="course__logo" alt="" />
-                        <p class="content--heading">Backend <span class="content--extra">Development</span></p>
-                        <p class="content--title">Learn Backend development with Node.js </p>
-                        <p class="content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed..</p>
-                        <button class="button course--button">Apply Now</button>
+                    <div class="courses__figure not-free price-100">
+                        <img class="course--image" src="/public/assets/imgs/backend.jpg" alt="" />
+                        <div class="course--content">
+                            <img src="/public/assets/imgs/logo.png" class="course__logo" alt="" />
+                            <p class="content--heading">Backend <span class="content--extra">Development.</span></p>
+                            <p class="content--title">Learn Backend development with Node.js </p>
+                            <p class="content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed..</p>
+                            <button class="button course--button">Apply Now</button>
+                        </div>
                     </div>
-                </div>
+                </span>
             </div>
         </section>
 
@@ -334,6 +364,7 @@
                 </span>
             </div>
         </section>
+
 
         <section class="section contact-us__section" id="contact">
             <div class="section__container">

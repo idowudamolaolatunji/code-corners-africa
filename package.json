@@ -1,0 +1,28 @@
+{
+  "name": "code-corners-africa-v1",
+  "version": "1.0.0",
+  "description": "a coding tuturing platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idowudamolaolatunji/code-corners-africa.git"
+  },
+  "keywords": [
+    "coding",
+    "tutoring",
+    "code",
+    "tech"
+  ],
+  "author": "Idowu Olatunji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idowudamolaolatunji/code-corners-africa/issues"
+  },
+  "homepage": "https://github.com/idowudamolaolatunji/code-corners-africa#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

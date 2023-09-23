@@ -135,6 +135,15 @@ a:link, a:visited {
     line-height: 1.5;
     text-align: center;
 }
+textarea {
+    resize: none;
+}
+.effect--display-none {
+    display: none;
+}
+.hero-icon-arrow {
+    margin-top: .8rem;
+}
 .ball {
     width: 5rem;
     height: 5rem;
@@ -143,7 +152,6 @@ a:link, a:visited {
     left: 0;
     border-radius: 50%;
     pointer-events: none;
-    /* background-color: white; */
     border: 1.4px solid #eee;
     
     position: relative;
@@ -221,9 +229,99 @@ a:link, a:visited {
     transform: translateY(-3px);
     box-shadow: 0 0 0 .08rem #aaa;
 }
-textarea {
-    resize: none;
+
+
+/* mobile navigation */
+.mobile-nav {
+    display: none;
 }
+.menu-label .menu {
+    position: absolute;
+    right: -5%;
+    top: -3%;
+    z-index: 100;
+    width: 10rem;
+    height: 10rem;
+    background: transparent;
+    border-radius: 50% 50% 50% 50%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #eee, 0 0 0 0 #eee;
+    cursor: pointer;
+}
+  
+.menu-label .hamburger {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 3rem;
+    height: .2rem;
+    background: #fff;
+    display: block;
+    transform-origin: center;
+    transition: .35s ease-in-out;
+}
+  
+.menu-label .hamburger:after, .menu-label .hamburger:before {
+    transition: .35s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.menu-label .hamburger:before { top: -10px; }
+  
+.menu-label .hamburger:after { bottom: -10px; }
+  
+.menu-label .menu-input { display: none; }
+  
+.menu-label .menu-input:checked + .menu {
+    box-shadow: 0 0 0 30rem #ffffff7f, 0 0 0 30rem #ffffff7f;
+    border-radius: 0;
+    background: #ffffffbd;
+}
+  
+.menu-label .menu-input:checked + .menu .hamburger {
+    transform: rotate(45deg);
+    background: #0b101b;
+}
+  
+.menu-label .menu-input:checked + .menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+    background: #0b101b;
+}
+  
+.menu-label .menu-input:checked + .menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+    background: #0b101b;
+}
+  
+.menu-label .menu-input:checked + .menu + .menu-nav { opacity: 1; }
+  
+.menu-label .menu-nav {
+    z-index: 200;
+    position: absolute;
+    bottom: -250%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s 0s ease-in-out;
+}
+  
+.menu-label a {
+    margin-bottom: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: block;
+    color: #0b101b;
+    text-decoration: none;
+}
+
+/*  */
 .back-to-top {
     width: 4.8rem;
     height: 4.8rem;

@@ -1,4 +1,4 @@
-.hero__section {
+ .hero__section {
     padding: 16rem 0 8rem;
     position: relative;
     background-color: #0b101b;
@@ -135,12 +135,12 @@
 /* about section */
 .about__section {
     background-color: #0b101b;
-    /* clip-path: circle(60% at 55% 5%);
+    clip-path: circle(100% at 55% 5%);
     transition: all 1s;
-    animation: openUp 4s ease-in-out; */
-    /* animation: openUp 4s ease-in-out infinite  1s alternate-reverse; */
+    animation: openUp 4s ease-in-out;
+    animation: openUp 4s ease-in-out infinite  1s alternate-reverse;
 }
-/* 
+
 @keyframes openUp {
     0% {
         transform: translateY(-4.8rem);
@@ -151,9 +151,9 @@
         clip-path: circle(2% at 50% 4%);
     }
     100% {
-        clip-path: circle(65% at 50% 4%);
+        clip-path: circle(100% at 50% 4%);
     }
-} */
+}
 
 .about__content {
     text-align: center;
@@ -222,6 +222,9 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.course__section .section__subHeading, .tutor-profile__section .section__subHeading, .featured__section .section__subHeading {
+    color: #aaa;
+}
 .courses__text {
     max-width: 90rem;
     text-align: center;
@@ -230,14 +233,14 @@
     line-height: 1.4;
     margin-bottom: 4.8rem;
 }
-.courses__card, .why--figure {
+.courses__figure, .why--figure {
     border-radius: 1rem;
     padding: 2.4rem;
     box-shadow: .6rem .6rem 2.4rem rgba(0, 0, 0, .1);
     background-color: rgba(255,255,255,.6);
     border: 2px solid rgba(255,255,255,.8);
 }
-.courses__card {
+.courses__figure {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
@@ -246,10 +249,11 @@
     position: relative;
     overflow: hidden;
 }
-.courses__card:last-child {
+.courses__figure:last-child {
     margin-bottom: 0;
 }
-.free::after, .not-free::after {
+/* .free::after, .not-free::after { */
+.free::after {
     display: inline-block;
     width: 16rem;
     height: 3.2rem;
@@ -268,12 +272,14 @@
 .free::after {
     content: 'Free';
 }
-.price-50::after {
+/* .price-50::after {
+    content: 'Paid';
     content: '₦50,000';
 }
 .price-100::after {
+    content: 'Paid';
     content: '₦100,000';
-}
+} */
 .course--image {
     width: 100%;
     border-radius: .8rem;
@@ -322,8 +328,9 @@
 .why-choose-us__section, .contact-us__section {
     background-color: #111;
     backdrop-filter: blur(6px);
-    background-image: radial-gradient(circle closest-side,#080820 50%,#010104);
+    background-image: radial-gradient(circle closest-side,#0f0f37 60%,#010104);
     color: #ddd;
+    background-position: fixed;
 }
 .why-choose-us__section .section__heading {
     font-size: 3.6rem;
@@ -529,6 +536,8 @@ img.prestige {
     height: 4.8rem;
 }
 
+
+
 /*  */
 .contact__heading {
     font-size: 4rem;
@@ -555,6 +564,7 @@ img.prestige {
 }
 .form--input {
     width: 100%;
+    padding: 2rem;
 }
 .form--input, textarea.form--textarea {
     border: 2px solid rgba(255,255,255,.8);
